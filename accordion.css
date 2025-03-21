@@ -15,7 +15,7 @@ button.accordion {
   width: 100%;
   background-color: whitesmoke;
   border: none;
-
+  outline: none;
   text-align: left;
   padding: 15px 20px;
   font-size: 18px;
@@ -49,4 +49,8 @@ button.accordion.is-open {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
+}
+
+.accordion:focus-within {
+  border: 1px solid hsl(216deg 94% 43%);;
 }
